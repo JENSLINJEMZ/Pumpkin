@@ -1,0 +1,843 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 'barder-box';
+    font-family: 'poppins', 'sans-serif';
+}
+
+body {
+    color: #ededed;
+    background: url(Images/background.png);
+
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: #fff;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(Images/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10px 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span {
+    color: #0ef;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #0ef;
+    color: #0ef;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2 * var(--i));
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;  
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: #0ef;
+}
+
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+#services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color: #0ef;
+
+}
+.container{
+    padding: 90px;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #013390f7,
+            1px 1px 40px #0053b8f7
+}
+.services-list div{
+    font-size: 15px;
+    margin-bottom: 30px;
+
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+.read:hover{
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+
+
+
+
+
+/*   This is Html Design Code  */
+
+
+
+
+
+
+.skill * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.body {
+    background: url(Images/background.png);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    /*background: cornflowerblue;*/
+    position: relative;
+    display: inline-block; /* Added to make them appear in a row */
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                    inset -4px -4px 7px -1px rgba(255, 255, 255, 0.7),
+                    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                    0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+                    0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.number {
+    font-weight: 600;
+    color: rgb(234, 0, 255);
+}
+
+.circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472; /* Animate this circle */
+    stroke-dashoffset: 472; /* Animate this circle */
+    animation: anim 2s linear forwards;
+}
+
+.svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 60;
+    }
+}
+
+
+
+/*  This is Css design code   */
+
+
+
+
+.skill1  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.skill1 {
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    /*background: cornflowerblue;*/
+    position: relative;
+    display: inline-block; /* Added to make them appear in a row */
+}
+
+.skill1 .outer1 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.skill1 .inner1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                    inset -4px -4px 7px -1px rgba(255, 255, 255, 0.7),
+                    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                    0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+                    0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+
+.skill1 .number1 {
+    font-weight: 600;
+    color: rgb(234, 0, 255);
+}
+
+.skill1 .circle1 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472; /* Animate this circle */
+    stroke-dashoffset: 472; /* Animate this circle */
+    animation: anim1 2s linear forwards;
+}
+
+.skill1 .svg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim1 {
+    100% {
+        stroke-dashoffset: 70;
+    }
+}
+
+
+
+/*  This is Javascript design code   */
+
+
+
+.skill2  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.skill2 {
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    /*background: cornflowerblue;*/
+    position: relative;
+    display: inline-block; /* Added to make them appear in a row */
+}
+
+.skill2 .outer2 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.skill2 .inner2 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                    inset -4px -4px 7px -1px rgba(255, 255, 255, 0.7),
+                    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                    0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+                    0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+
+.skill2 .number2 {
+    font-weight: 600;
+    color: rgb(234, 0, 255);
+}
+
+.skill2 .circle2 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472; /* Animate this circle */
+    stroke-dashoffset: 472; /* Animate this circle */
+    animation: anim2 2s linear forwards;
+}
+
+.skill2 .svg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim2 {
+    100% {
+        stroke-dashoffset: 250;
+    }
+}
+
+
+/*  This is Node JS design code   */
+
+
+
+.skill3  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.skill3 {
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    /*background: cornflowerblue;*/
+    position: relative;
+    display: inline-block; /* Added to make them appear in a row */
+}
+
+.skill3 .outer3 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.skill3 .inner3 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                    inset -4px -4px 7px -1px rgba(255, 255, 255, 0.7),
+                    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                    0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+                    0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+
+.skill3 .number3 {
+    font-weight: 600;
+    color: rgb(234, 0, 255);
+}
+
+.skill3 .circle3 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472; /* Animate this circle */
+    stroke-dashoffset: 472; /* Animate this circle */
+    animation: anim3 2s linear forwards;
+}
+
+.skill3 .svg3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim3 {
+    100% {
+        stroke-dashoffset: 350;
+    }
+}
+
+
+
+
+/*  This is Python  design code   */
+
+
+.skill4  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.skill4 {
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    /*background: cornflowerblue;*/
+    position: relative;
+    display: inline-block; /* Added to make them appear in a row */
+}
+
+.skill4 .outer4 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.skill4 .inner4 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                    inset -4px -4px 7px -1px rgba(255, 255, 255, 0.7),
+                    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                    0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+                    0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+
+.skill4 .number4 {
+    font-weight: 600;
+    color: rgb(234, 0, 255);
+}
+
+.skill4 .circle4 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472; /* Animate this circle */
+    stroke-dashoffset: 472; /* Animate this circle */
+    animation: anim4 2s linear forwards;
+}
+
+.skill4 .svg4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim4 {
+    100% {
+        stroke-dashoffset: 150;
+    }
+}
+
+
+
+/*  This is Bash design code   */
+
+
+
+.skill5  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.skill5 {
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    /*background: cornflowerblue;*/
+    position: relative;
+    display: inline-block; /* Added to make them appear in a row */
+}
+
+.skill5 .outer5 {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.skill5 .inner5 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                    inset -4px -4px 7px -1px rgba(255, 255, 255, 0.7),
+                    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                    0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+                    0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+
+.skill5 .number5 {
+    font-weight: 600;
+    color: rgb(234, 0, 255);
+}
+
+.skill5 .circle5 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472; /* Animate this circle */
+    stroke-dashoffset: 472; /* Animate this circle */
+    animation: anim5 2s linear forwards;
+}
+
+.skill5 .svg5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim5 {
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+
+.skill-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-logo div {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.skill-logo div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px; /* Width of the line */
+    height: 60%; /* Height of the line */
+    background-color: #000; /* Color of the line */
+}
+
+.skill-logo i {
+    font-size: 35px; /* Adjust the font size as needed */
+    display: block;
+}
+
+.skill-logo .html{
+    margin: 20;
+    padding: 30px;
+
+}
+
+.skill-logo .css{
+    margin: 20;
+    padding: 30px;
+}
+
+.skill-logo .javascript{
+    margin: 20px;
+    padding: 30px;
+}
+
+.skill-logo .nodejs{
+    margin: 20;
+    padding: 30px;
+}
+
+.skill-logo .python{
+    margin: 20;
+    padding: 30px;
+}
+
+.skill-logo .bash{
+    margin: 20;
+    padding: 30px;
+}
+
+
