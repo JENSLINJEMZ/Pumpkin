@@ -1,3 +1,33 @@
+@media screen and (max-width: 600px) {
+
+    .mobile{
+        margin-left: 600px;
+        margin-bottom: 200x;
+    }
+
+    .services .container .services-list{
+
+        font-size: 36px;
+        line-height: 20px;
+        width: 300px;
+        margin-left: -50px;
+    }
+
+    .bx {
+        font-size: 50px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -192,6 +222,11 @@ body {
     line-height: 1.4;
     margin-bottom: 4rem;
 }
+
+.bx{
+    font-size: 50px;      /*  this is icon size  */
+}
+
 .sub-title{
     text-align: center;
     font-size: 60px;
