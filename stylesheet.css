@@ -17,6 +17,8 @@
         font-size: 50px;
 
     }
+    
+    
 
 
 }
@@ -216,6 +218,25 @@ body {
     margin-bottom: 4rem;
 }
 
+
+
+
+
+/*   This is users menu style     */
+
+
+
+
+
+
+
+
+
+
+/*   This is users menu style end    */
+
+
+
 #services{
     color: aliceblue;
     font-size: 20px;
@@ -223,9 +244,7 @@ body {
     margin-bottom: 4rem;
 }
 
-.bx{
-    font-size: 50px;      /*  this is icon size  */
-}
+
 
 .sub-title{
     text-align: center;
@@ -389,7 +408,7 @@ body {
     font-family: 'poppins', sans-serif;
 }
 
-.body {
+.skill .body {
     background: url(Images/background.png);
     height: 100vh;
     display: flex;
@@ -875,4 +894,14 @@ body {
     padding: 30px;
 }
 
+/*  This is all score board margin control  */
 
+.body .skill {
+    margin-left: 70px;
+}
+.body .skill1,.skill2,.skill3,.skill4,.skill5 {
+    margin-left: 130px;
+}
+
+
+/*  This is all score board margin control  Ended */

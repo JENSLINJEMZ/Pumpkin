@@ -1,5 +1,5 @@
 var typed = new Typed(".text", {
-    strings: ["Ethical Hacker" , "Web Developer"],
+    strings: ["Ethical Hacker", "CyberSecurity Researcher" , "Web Developer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -105,3 +105,8 @@ setInterval(() => {
             number5.innerHTML = counter5 + "%"
     }
 }, 23);
+
+
+
+
+  
